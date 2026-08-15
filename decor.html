@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
     <style>
         @font-face {
             font-family: 'Kanit-Regular';
@@ -40,7 +41,7 @@
 
         h1 {
             font-size: 60px;
-            background: linear-gradient(to right, rgb(255, 161, 39), rgba(255, 204, 19, 0.9));
+            background: linear-gradient(to right, rgb(255, 124, 37), rgba(255, 200, 19, 0.9));
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
@@ -142,14 +143,18 @@
     margin-bottom: -300px;
 }
 
+.hide {
+    display: none;
+}
+
 
     </style>
 </head>
 <body>
     <div class="section">
-        <h1>who said that?</h1>
+        <h1 class="who">who said that?</h1>
         <h2 class="animate__animated animate__backInLeft">an interactive website simulating the viral trivia question 'who said that: Kanye West or Donald Trump?' to Colombia's context.</h2>
-        <h3 class="h3-class animate__animated animate__backinRight">...so who said that? a colombian politician or a reggaeton artist? </h3>
+        <h3 class="h3-class animate__animated animate__backinRight">...so who said that? a colombian politician or a 'reguetonero'? </h3>
         <img src:"Background.jpg">
         </div>
 
@@ -166,10 +171,18 @@
     </div>
 
     <div class="button-container">
-    <button id="buttonstart" class="buttonstart"><b>let's get to it!</b></button>
+    <button id="buttonstart" class="buttonstart animate__animated animate__wobble"><b>let's get to it!</b></button>
 </div>
 
 <script>
+    let button = document.querySelector('.buttonstart');
+  
+
+    button.addEventListener("click", () => {
+   button.classList.add('hide');
+
+    })
+
 
     </script>
     </body>
