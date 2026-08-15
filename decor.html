@@ -40,7 +40,7 @@
 
         h1 {
             font-size: 60px;
-            background: linear-gradient(to right, rgb(255,39,115), rgb(255, 19, 220));
+            background: linear-gradient(to right, rgb(255, 161, 39), rgba(255, 204, 19, 0.9));
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
@@ -57,14 +57,14 @@
             margin-top: 15px;
             margin-bottom: 12px;
             background-color:rgb(252, 249, 232);
-            color: rgb(167, 0, 128);
+            color: rgb(91, 53, 31);
             font-family: 'Kanit-Regular';
             font-size: 16px;
             
         }
 
-        h3 {
-            color: rgb(105, 5, 58);
+        .h3-class {
+            color: rgb(123, 81, 39);
             font-family: 'Kanit-Regular';
             font-size: 14px;
         }
@@ -82,8 +82,8 @@
         p {
             position: absolute;
             font-family: 'Kanit-Regular';
-            color:rgb(149, 12, 83);
-            background-color: rgb(250, 239, 248);
+            color:rgb(110, 80, 59);
+            background-color: rgb(250, 249, 239);
             flex-direction:row;
             margin-left: 80px;
             width: 290px;
@@ -113,25 +113,37 @@
             margin-left: 550px;
         }
 
+        .aguevardo {
+            display: flex;
+            position: absolute;
+            flex-direction: column;
+            width: 100px;
+            margin-top: -7px;
+            margin-left: 507px;
+        }
+
 
     </style>
 </head>
 <body>
     <div class="section">
         <h1>who said that?</h1>
-        <h2>an interactive website simulating the viral trivia question 'who said that: Kanye West or Donald Trump?' to Colombia's context.</h2>
-        <h3>...so who said that? a colombian politician or a reggaeton artist? </h3>
+        <h2 class="animate__animated animate__backInLeft">an interactive website simulating the viral trivia question 'who said that: Kanye West or Donald Trump?' to Colombia's context.</h2>
+        <h3 class="h3-class animate__animated animate__backinRight">...so who said that? a colombian politician or a reggaeton artist? </h3>
         <img src:"Background.jpg">
         </div>
 
         <div class="info-row">
-        <img src="pray.jpg" class="praying" alt="praying-colombian">
-        <p>You'll get a random <b>quote</b>, and you'll have to decide whether it comes from a colombian politician (like <b>Jota Pe Hernández</b> or <b>Abelardo de la Espriella</b>), or a reggaeton (popular music genre in Colombia, and all Latin America) artist, like <b>Karol G</b> or Ferxxo.</p>
+        <img src="pray.jpg" class="praying animate__animated animate__wobble" alt="praying-colombian">
+        <p>You'll get a random <b>quote</b>, and you'll have to decide whether it comes from a colombian politician (like <b>Jota Pe Hernández</b> or <b>Abelardo de la Espriella</b>), or a reggaeton (popular music genre in Colombia, and all Latin America) artist, like <b>Karol G</b> or <b>Ferxxo</b>.</p>
     </div>
         <div class="mangos">
-        <img src="mango1.png" class="tasty-mango" alt="yumm mango">
-
+        <img src="mango1.png" class="tasty-mango animate__animated animate__wobble" alt="yumm mango">
         </div>
+
+    <div class="aguevardo">
+        <img src="abde.webp" class="i-hate-him animate__animated animate__wobble" alt="Abelardo de la Espriella"
+    </div>
 
 <script>
     </script>
