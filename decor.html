@@ -143,6 +143,12 @@
     margin-bottom: -300px;
 }
 
+ .fade-out {
+            opacity: 0;
+            transition: opacity 1s ease;
+            pointer-events: none;
+        }
+
 .hide {
     display: none;
 }
@@ -152,9 +158,9 @@
 </head>
 <body>
     <div class="section">
-        <h1 class="who">who said that?</h1>
+        <h1 class="who animate__animated animate__flipInY">who said that?</h1>
         <h2 class="animate__animated animate__backInLeft">an interactive website simulating the viral trivia question 'who said that: Kanye West or Donald Trump?' to Colombia's context.</h2>
-        <h3 class="h3-class animate__animated animate__backinRight">...so who said that? a colombian politician or a 'reguetonero'? </h3>
+        <h3 class="h3-class animate__animated animate__backInRight">...so who said that? a colombian politician or a 'reguetonero'? </h3>
         <img src:"Background.jpg">
         </div>
 
@@ -185,6 +191,16 @@
     let mango = document.querySelector('.tasty-mango');
 
     button.addEventListener("click", () => {
+    button.classList.add('fade-out');
+   heading1.classList.add('fade-out');
+   heading2.classList.add('fade-out');
+   heading3.classList.add('fade-out');
+   paragraph.classList.add('fade-out');
+   abelardo.classList.add('fade-out');
+   pic.classList.add('fade-out');
+   mango.classList.add('fade-out');
+
+   setTimeout(() => {
    button.classList.add('hide');
    heading1.classList.add('hide');
    heading2.classList.add('hide');
@@ -193,6 +209,7 @@
    abelardo.classList.add('hide');
    pic.classList.add('hide');
    mango.classList.add('hide');
+   }, 800);
 
 
 
